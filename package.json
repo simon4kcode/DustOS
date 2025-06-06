@@ -1,0 +1,17 @@
+{
+  "name": "galaxyv4",
+  "version": "1.0.1",
+  "description": "Surf the Galaxy with no limits...",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@swup/head-plugin": "^2.3.1",
+    "chemicaljs": "^2.6.4",
+    "express": "^4.21.2",
+    "swup": "^4.8.1",
+    "eruda": "^3.4.1"
+  }
+}
