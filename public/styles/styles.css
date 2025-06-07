@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.welcomePage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.setupCard {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 500px;
+}
+.stepOne {
+  animation: ghostin 0.5s ease 1.8s forwards;
+  opacity: 0;
+}
+.galaxy {
+  opacity: 0;
+  margin: 0;
+  font-size: 190px;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+}
+.question {
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+#name {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid;
+  outline: none;
+  background: none;
+  width: 20rem;
+  padding: 15px 0px 15px 10px;
+  margin-bottom: 10vh;
+  transition-duration: 0.7s;
+}
+#name:focus {
+  transform: scale(1.08);
+  border: 2px solid 3px;
+}
+#name::placeholder {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: gray;
+  opacity: 1; /* Some browsers apply default opacity */
+}
+.stepTwo {
+  opacity: 0;
+}
