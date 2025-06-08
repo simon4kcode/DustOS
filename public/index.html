@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/svg.css" />
     <link rel="stylesheet" href="styles/animations.css" />
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <!--GSAP STUFF-->
-    <script src="js/gsap.js" defer></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"
-      defer
-    ></script>
+
+    <!-- Scripts -->
+    <script src="js/setup.js" defer></script>
     <script
       src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"
       defer
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"
+      defer
+    ></script>
+    <script src="js/gsap.js" defer></script>
     <script src="js/animation.js" defer></script>
   </head>
   <body class="welcomePage">
@@ -27,11 +30,36 @@
       <div class="setupCard">
         <div class="stepOne" id="stepOne">
           <h2 class="question">What's your name?</h2>
-          <input placeholder="Enter name:" id="name" type="text" />
+          <input
+            placeholder="Enter name:"
+            id="name"
+            class="setupInput"
+            type="text"
+          />
         </div>
         <div class="stepTwo">
-          <h2 class="question">googa</h2>
-          <input placeholder="Enter name:" id="name" type="text" />
+          <h2 class="question">
+            Welcome to Galaxy, <span id="NamePlaceholder">___</span>
+          </h2>
+          <h3 class="question2">Select the type of proxy you want to use:</h3>
+          <select id="proxySelector" class="SetupSelect">
+            <option value="UV">Ultraviolet (Stable)</option>
+            <option value="SJ">Scramjet (Experimental)</option>
+            <option value="RH">Rammerhead (Old)</option>
+          </select>
+          <button
+            class="setupButtonBig"
+            onclick=""
+          >
+            Continue
+          </button>
+
+          <button
+            class="setupButtonSmall setupGoBack"
+            onclick="stepOneEnter(); LoadUserName(); GetUserName();"
+          >
+            ←
+          </button>
         </div>
       </div>
     </main>

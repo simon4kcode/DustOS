@@ -1,3 +1,4 @@
+// intro animation
 gsap.fromTo(
   ".galaxy",
   {
@@ -15,6 +16,7 @@ gsap.fromTo(
     ),
   }
 );
+
 
 function stepOneLeave() {
   gsap.to(".stepOne", {
@@ -40,9 +42,33 @@ function stepOneLeave() {
     }
   );
 }
-
 document.getElementById("name").addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
     stepOneLeave();
   }
 });
+
+function stepOneEnter() {
+  gsap.fromTo(
+    ".stepTwo",
+    {
+      x: "0vw",
+    },
+    {
+      x: "100vw",
+      ease: "power2.inOut",
+      duration: 1.2,
+    }
+  );
+
+  gsap.to(".stepOne", {
+    delay: 0.6,
+    duration: 1,
+    x: "-0vw",
+    opacity: 1,
+    ease: "power2.inOut",
+    onStart: function () {
+      document.getElementById("stepOne").style.display = "flex";
+    },
+  });
+}
