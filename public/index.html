@@ -6,10 +6,10 @@
     <title>Welcome</title>
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/fonts.css" />
-    <link rel="stylesheet" href="styles/svg.css" />
-    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/fonts.css" />
+    <link rel="stylesheet" href="assets/styles/svg.css" />
+    <link rel="stylesheet" href="assets/styles/animations.css" />
 
     <!-- Scripts -->
     <script src="js/setup.js" defer></script>
@@ -26,7 +26,7 @@
   </head>
   <body class="welcomePage">
     <main>
-      <h1 class="galaxy">Galaxy</h1>
+      <h1 class="SetUpGalaxy">Galaxy</h1>
       <div class="setupCard">
         <div class="stepOne" id="stepOne">
           <h2 class="question">What's your name?</h2>
@@ -47,17 +47,24 @@
             <option value="SJ">Scramjet (Experimental)</option>
             <option value="RH">Rammerhead (Old)</option>
           </select>
-          <button
-            class="setupButtonBig"
-            onclick=""
-          >
-            Continue
-          </button>
+          <button class="setupButtonBig" onclick="">Continue</button>
 
           <button
             class="setupButtonSmall setupGoBack"
-            onclick="stepOneEnter(); LoadUserName(); GetUserName();"
+            onclick="stepTwoBack(); LoadUserName(); GetUserName();"
           >
+            ←
+          </button>
+        </div>
+        <div class="stepThree">
+          <h2 class="question">Choose a background:</h2>
+          <div class="bgSelector">
+            <div class="bgAll bg1"><img class="bgImg" src="assets/bg/bg1.png" alt=""></div>
+            <div class="bgAll bg2"><img class="bgImg" src="assets/bg/bg1.png" alt=""></div>
+            <div class="bgAll bg3"><img class="bgImg" src="assets/bg/bg1.png" alt=""></div>
+          </div>
+          <button class="setupButtonBig" onclick="">Continue</button>
+          <button class="setupButtonSmall setupGoBack" onclick="ProxyType()">
             ←
           </button>
         </div>

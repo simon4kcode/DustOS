@@ -1,6 +1,6 @@
 // intro animation
 gsap.fromTo(
-  ".galaxy",
+  ".SetUpGalaxy",
   {
     opacity: 1,
     y: "-100vh",
@@ -48,7 +48,7 @@ document.getElementById("name").addEventListener("keydown", function (event) {
   }
 });
 
-function stepOneEnter() {
+function stepTwoBack() {
   gsap.fromTo(
     ".stepTwo",
     {
@@ -57,7 +57,7 @@ function stepOneEnter() {
     {
       x: "100vw",
       ease: "power2.inOut",
-      duration: 1.2,
+      duration: 1,
     }
   );
 

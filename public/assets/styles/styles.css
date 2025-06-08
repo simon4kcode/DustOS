@@ -1,0 +1,151 @@
+body {
+  height: 100vh;
+  width: 100vw;
+}
+.welcomePage {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.setupCard {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+}
+.stepOne {
+  animation: ghostin 0.8s ease 1.8s forwards;
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  opacity: 0;
+  display: none;
+}
+.SetUpGalaxy {
+  opacity: 0;
+  margin: 0;
+  font-size: 190px;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+}
+.question {
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin: 0;
+}
+.question2 {
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0;
+  margin-top: 16px;
+}
+.setupInput {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid;
+  outline: none;
+  background: none;
+  width: 20rem;
+  padding: 15px 0px 15px 10px;
+  transition-duration: 0.4s;
+  margin-top: 16px;
+}
+.setupInput:focus {
+  transform: translateX(10px);
+  border: 2px solid 3px;
+}
+.setupInput::placeholder {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: gray;
+  opacity: 1;
+}
+.stepTwo {
+  
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  opacity: 0;
+  display: none;
+}
+
+.setupButtonBig,
+.setupButtonSmall {
+  height: 40px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #ffffff12;
+  border-radius: 7px;
+  margin-top: 16px;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+  transition-duration: 0.2s;
+  border: 1px solid black;
+}
+.setupButtonBig {
+  width: 120px;
+}
+.setupButtonSmall {
+  width: 60px;
+}
+.setupButtonBig:hover,
+.setupButtonSmall:hover {
+  background-color: #98989829;
+}
+.SetupSelect {
+  margin-top: 8px;
+  width: 200px;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.SetupSelect:hover {
+  border-color: #3b3b3b;
+}
+
+.SetupSelect:focus {
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+.stepThree {
+  height: 100%;
+  width: auto;
+  
+}
+.bgSelector {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.bgAll{
+  width: 470px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.bgImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+
+}
