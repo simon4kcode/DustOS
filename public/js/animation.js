@@ -17,7 +17,6 @@ gsap.fromTo(
   }
 );
 
-
 function stepOneLeave() {
   gsap.to(".stepOne", {
     duration: 1,
@@ -35,6 +34,9 @@ function stepOneLeave() {
       opacity: 1,
     },
     {
+      onStart: function () {
+        document.getElementById("stepTwo").style.display = "flex";
+      },
       delay: 0.5,
       x: 0,
       ease: "power2.inOut",
@@ -71,4 +73,97 @@ function stepTwoBack() {
       document.getElementById("stepOne").style.display = "flex";
     },
   });
+}
+function stepTwoLeave() {
+  gsap.fromTo(
+    ".stepTwo",
+    {
+      x: "0vw",
+    },
+    {
+      x: "-100vw",
+      ease: "power2.inOut",
+      duration: 1,
+      onComplete: function () {
+        document.getElementById("stepOne").style.display = "none";
+      },
+    }
+  );
+
+  gsap.fromTo(
+    ".stepThree",
+    {
+      x: "100vw",
+    },
+    {
+      onStart: function () {
+        document.getElementById("stepThree").style.display = "flex";
+      },
+      x: "0vw",
+      delay: 0.6,
+      duration: 1,
+      opacity: 1,
+      ease: "power2.inOut",
+    }
+  );
+}
+function stepThreeBack() {
+  gsap.fromTo(
+    ".stepThree",
+    {
+      x: "0vw",
+    },
+    {
+      x: "100vw",
+      ease: "power2.inOut",
+      duration: 1,
+      onComplete: function () {
+        document.getElementById("stepThree").style.display = "none";
+      },
+    }
+  );
+
+  gsap.to(".stepTwo", {
+    delay: 0.6,
+    duration: 1,
+    x: "-0vw",
+    opacity: 1,
+    ease: "power2.inOut",
+    onStart: function () {
+      document.getElementById("stepOne").style.display = "flex";
+    },
+  });
+}
+function stepThreeLeave() {
+  gsap.fromTo(
+    ".stepThree",
+    {
+      x: "0vw",
+    },
+    {
+      x: "-100vw",
+      ease: "power2.inOut",
+      duration: 1,
+      onComplete: function () {
+        document.getElementById("stepThree").style.display = "none";
+      },
+    }
+  );
+
+  gsap.fromTo(
+    ".finishSetup",
+    {
+      x: "100vw",
+    },
+    {
+      onStart: function () {
+        document.getElementById("finishSetup").style.display = "flex";
+      },
+      x: "0vw",
+      delay: 0.6,
+      duration: 1,
+      opacity: 1,
+      ease: "power2.inOut",
+    }
+  );
 }

@@ -25,7 +25,6 @@
     <script src="js/animation.js" defer></script>
   </head>
   <body class="welcomePage">
-    <main>
       <h1 class="SetUpGalaxy">Galaxy</h1>
       <div class="setupCard">
         <div class="stepOne" id="stepOne">
@@ -37,7 +36,7 @@
             type="text"
           />
         </div>
-        <div class="stepTwo">
+        <div class="stepTwo" id="stepTwo">
           <h2 class="question">
             Welcome to Galaxy, <span id="NamePlaceholder">___</span>
           </h2>
@@ -47,28 +46,44 @@
             <option value="SJ">Scramjet (Experimental)</option>
             <option value="RH">Rammerhead (Old)</option>
           </select>
-          <button class="setupButtonBig" onclick="">Continue</button>
+          <button class="setupButtonBig" onclick="stepTwoLeave()">
+            Continue
+          </button>
 
           <button
-            class="setupButtonSmall setupGoBack"
+            class="setupButtonSmall"
             onclick="stepTwoBack(); LoadUserName(); GetUserName();"
           >
             ←
           </button>
         </div>
-        <div class="stepThree">
-          <h2 class="question">Choose a background:</h2>
+        <div class="stepThree" id="stepThree">
+          <h2 class="question backgroundH2">Choose a background:</h2>
           <div class="bgSelector">
-            <div class="bgAll bg1"><img class="bgImg" src="assets/bg/bg1.png" alt=""></div>
-            <div class="bgAll bg2"><img class="bgImg" src="assets/bg/bg1.png" alt=""></div>
-            <div class="bgAll bg3"><img class="bgImg" src="assets/bg/bg1.png" alt=""></div>
+            <div class="bgAll bg1">
+              <img class="bgImg" src="assets/bg/bg1.png" alt="" />
+            </div>
+            <div class="bgAll bg2">
+              <img class="bgImg" src="assets/bg/bg1.png" alt="" />
+            </div>
+            <div class="bgAll bg3">
+              <img class="bgImg" src="assets/bg/bg1.png" alt="" />
+            </div>
           </div>
-          <button class="setupButtonBig" onclick="">Continue</button>
-          <button class="setupButtonSmall setupGoBack" onclick="ProxyType()">
-            ←
-          </button>
+          <div class="gobackorcontinue">
+            <button
+              class="setupButtonSmall"
+              onclick="ProxyType(); stepThreeBack();"
+            >
+              ←
+            </button>
+            <button class="setupButtonBig" onclick="stepThreeLeave()">Continue</button>
+          </div>
+        </div>
+        <div class="finishSetup" id="finishSetup">
+          <h2 class="question">That's it!</h2>
+          <button class="setupButtonBig">Start Browsing</button>
         </div>
       </div>
-    </main>
   </body>
 </html>
