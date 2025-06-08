@@ -10,21 +10,23 @@ body {
   justify-content: center;
 }
 .setupCard {
+    position: absolute;
+
   margin: 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 500px;
   width: 500px;
+  height: 100vh;
 }
 .stepOne {
   animation: ghostin 0.8s ease 1.8s forwards;
   display: flex;
   flex-direction: column;
   width: 336px;
+  position: absolute;
   opacity: 0;
-  display: none;
 }
 .SetUpGalaxy {
   opacity: 0;
@@ -70,10 +72,10 @@ body {
   opacity: 1;
 }
 .stepTwo {
-  
   display: flex;
   flex-direction: column;
   width: 500px;
+  position: absolute;
   opacity: 0;
   display: none;
 }
@@ -125,16 +127,21 @@ body {
 .stepThree {
   height: 100%;
   width: auto;
-  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  display: none;
 }
 .bgSelector {
+  margin-top: 16px;
   display: flex;
   flex-direction: row;
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.bgAll{
+.bgAll {
   width: 470px;
   height: 270px;
   display: flex;
@@ -147,5 +154,14 @@ body {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-
+}
+.finishSetup {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  display: none;
 }
