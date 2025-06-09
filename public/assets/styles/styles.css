@@ -2,15 +2,38 @@ body {
   height: 100vh;
   width: 100vw;
 }
+html {
+  overflow-x: hidden;
+  /* THEMES */
+  --mainTextColor: #000000;
+  --mainButtonColor: #98989829;
+  --mainButtonHover: #9898986b;
+  --mainBorderColor: #000000;
+  --mainPlaceholderColor: #d4d4d4;
+}
+h1, h2, h3, button {
+  color: var(--mainTextColor);
+}
 .welcomePage {
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+#background {
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.5s ease;
+}
 .setupCard {
-    position: absolute;
+  position: absolute;
 
   margin: 0;
   display: flex;
@@ -51,6 +74,7 @@ body {
 .setupInput {
   font-family: "Open Sans", serif;
   font-size: 16px;
+  color: var(--mainTextColor);
   border-radius: 5px;
   border: 2px solid;
   outline: none;
@@ -59,7 +83,9 @@ body {
   padding: 15px 0px 15px 10px;
   transition-duration: 0.4s;
   margin-top: 16px;
+  border: 1px solid var(--mainBorderColor);
 }
+
 .setupInput:focus {
   transform: translateX(10px);
   border: 2px solid 3px;
@@ -68,7 +94,7 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   font-style: italic;
-  color: gray;
+  color: var(--mainPlaceholderColor);
   opacity: 1;
 }
 .stepTwo {
@@ -86,13 +112,13 @@ body {
   border: none;
   font-size: 1rem;
   cursor: pointer;
-  background-color: #ffffff12;
+  background-color: var(--mainButtonColor);
   border-radius: 7px;
   margin-top: 16px;
   font-family: "IBM Plex Sans", serif;
   font-weight: 400;
   transition-duration: 0.2s;
-  border: 1px solid black;
+  border: 1px solid var(--mainBorderColor);
 }
 .setupButtonBig {
   width: 120px;
@@ -102,7 +128,7 @@ body {
 }
 .setupButtonBig:hover,
 .setupButtonSmall:hover {
-  background-color: #98989829;
+  background-color: var(--mainButtonHover);
 }
 .SetupSelect {
   margin-top: 8px;
@@ -110,19 +136,16 @@ body {
   padding: 8px;
   font-size: 16px;
   border-radius: 5px;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--mainButtonColor);
+  color: var(--mainTextColor);
   cursor: pointer;
   outline: none;
   transition: 0.3s;
+  border: 1px solid var(--mainBorderColor);
 }
-
-.SetupSelect:hover {
-  border-color: #3b3b3b;
-}
-
-.SetupSelect:focus {
-  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+#proxySelector option {
+  background-color: #444444;
+  color: #ffffff;
 }
 .stepThree {
   height: 100%;

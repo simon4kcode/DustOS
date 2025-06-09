@@ -8,7 +8,6 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/styles/styles.css" />
     <link rel="stylesheet" href="assets/styles/fonts.css" />
-    <link rel="stylesheet" href="assets/styles/svg.css" />
     <link rel="stylesheet" href="assets/styles/animations.css" />
 
     <!-- Scripts -->
@@ -25,65 +24,80 @@
     <script src="js/animation.js" defer></script>
   </head>
   <body class="welcomePage">
-      <h1 class="SetUpGalaxy">Galaxy</h1>
-      <div class="setupCard">
-        <div class="stepOne" id="stepOne">
-          <h2 class="question">What's your name?</h2>
-          <input
-            placeholder="Enter name:"
-            id="name"
-            class="setupInput"
-            type="text"
-          />
-        </div>
-        <div class="stepTwo" id="stepTwo">
-          <h2 class="question">
-            Welcome to Galaxy, <span id="NamePlaceholder">___</span>
-          </h2>
-          <h3 class="question2">Select the type of proxy you want to use:</h3>
-          <select id="proxySelector" class="SetupSelect">
-            <option value="UV">Ultraviolet (Stable)</option>
-            <option value="SJ">Scramjet (Experimental)</option>
-            <option value="RH">Rammerhead (Old)</option>
-          </select>
-          <button class="setupButtonBig" onclick="stepTwoLeave()">
-            Continue
-          </button>
+    <div id="background"></div>
+    <h1 class="SetUpGalaxy">Galaxy</h1>
+    <div class="setupCard">
+      <div class="stepOne" id="stepOne">
+        <h2 class="question">What's your name?</h2>
+        <input
+          placeholder="Enter name:"
+          id="name"
+          class="setupInput"
+          type="text"
+        />
+      </div>
+      <div class="stepTwo" id="stepTwo">
+        <h2 class="question">
+          Welcome to Galaxy, <span id="NamePlaceholder">___</span>
+        </h2>
+        <h3 class="question2">Select the type of proxy you want to use:</h3>
+        <select id="proxySelector" class="SetupSelect">
+          <option value="UV">Ultraviolet (Stable)</option>
+          <option value="SJ">Scramjet (Experimental)</option>
+          <option value="RH">Rammerhead (Old)</option>
+        </select>
+        <button class="setupButtonBig" onclick="stepTwoLeave()">
+          Continue
+        </button>
 
+        <button
+          class="setupButtonSmall"
+          onclick="stepTwoBack(); LoadUserName(); GetUserName();"
+        >
+          ←
+        </button>
+      </div>
+      <div class="stepThree" id="stepThree">
+        <h2 class="question backgroundH2">Choose a background:</h2>
+        <div class="bgSelector">
+          <div
+            class="bgAll bg1"
+            data-bg="assets/bg/bg1.png"
+            data-theme="theme1"
+          >
+            <img class="bgImg" src="assets/bg/bg1.png" alt="" />
+          </div>
+          <div
+            class="bgAll bg2"
+            data-bg="assets/bg/bg2.png"
+            data-theme="theme2"
+          >
+            <img class="bgImg" src="assets/bg/bg2.png" alt="" />
+          </div>
+          <div
+            class="bgAll bg3"
+            data-bg="assets/bg/bg3.png"
+            data-theme="theme3"
+          >
+            <img class="bgImg" src="assets/bg/bg3.png" alt="" />
+          </div>
+        </div>
+        <div class="gobackorcontinue">
           <button
             class="setupButtonSmall"
-            onclick="stepTwoBack(); LoadUserName(); GetUserName();"
+            onclick="ProxyType(); stepThreeBack();"
           >
             ←
           </button>
-        </div>
-        <div class="stepThree" id="stepThree">
-          <h2 class="question backgroundH2">Choose a background:</h2>
-          <div class="bgSelector">
-            <div class="bgAll bg1">
-              <img class="bgImg" src="assets/bg/bg1.png" alt="" />
-            </div>
-            <div class="bgAll bg2">
-              <img class="bgImg" src="assets/bg/bg1.png" alt="" />
-            </div>
-            <div class="bgAll bg3">
-              <img class="bgImg" src="assets/bg/bg1.png" alt="" />
-            </div>
-          </div>
-          <div class="gobackorcontinue">
-            <button
-              class="setupButtonSmall"
-              onclick="ProxyType(); stepThreeBack();"
-            >
-              ←
-            </button>
-            <button class="setupButtonBig" onclick="stepThreeLeave()">Continue</button>
-          </div>
-        </div>
-        <div class="finishSetup" id="finishSetup">
-          <h2 class="question">That's it!</h2>
-          <button class="setupButtonBig">Start Browsing</button>
+          <button class="setupButtonBig" onclick="stepThreeLeave()">
+            Continue
+          </button>
         </div>
       </div>
+      <div class="finishSetup" id="finishSetup">
+        <h2 class="question">You're all set!</h2>
+        <button class="setupButtonBig">Start Browsing</button>
+      </div>
+    </div>
   </body>
 </html>
