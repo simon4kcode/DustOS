@@ -23,7 +23,7 @@
     <script src="js/gsap.js" defer></script>
     <script src="js/animation.js" defer></script>
   </head>
-  <body class="welcomePage">
+  <body class="welcomePage" onload="checkForName(); ProxyType();">
     <div id="background"></div>
     <h1 class="SetUpGalaxy">Galaxy</h1>
     <div class="setupCard">
@@ -42,11 +42,12 @@
         </h2>
         <h3 class="question2">Select the type of proxy you want to use:</h3>
         <select id="proxySelector" class="SetupSelect">
+          <option value="UV">Select</option>
           <option value="UV">Ultraviolet (Stable)</option>
           <option value="SJ">Scramjet (Experimental)</option>
           <option value="RH">Rammerhead (Old)</option>
         </select>
-        <button class="setupButtonBig" onclick="stepTwoLeave()">
+        <button class="setupButtonBig" onclick="checkStepTwo()">
           Continue
         </button>
 
@@ -99,5 +100,6 @@
         <button class="setupButtonBig">Start Browsing</button>
       </div>
     </div>
+    <p class="easteregg">MY name is Alan I go to Watchung Hill regional High school. I LOOOOOVE kanyes opinions and other things</p>
   </body>
 </html>

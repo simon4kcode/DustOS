@@ -1,3 +1,26 @@
+function checkForName() {
+  let name = localStorage.getItem("Name");
+  let selectedBackground = localStorage.getItem("selectedBackground");
+
+  console.log("Name:", name);
+  console.log("Selected Background:", selectedBackground);
+  console.log("Proxy Type:", proxyType);
+
+  if (name !== null && selectedBackground !== null && proxyType !== null) {
+    document.location.href = "main.html";
+  } else {
+    console.log("Not all values are set, continuing...");
+  }
+}
+function checkStepTwo() {
+  let proxyType = localStorage.getItem("proxyType");
+  if (proxyType === null) {
+    stepTwoIncomplete()
+  }
+  else {
+    stepTwoLeave()
+  }
+}
 function GetUserName() {
   document.getElementById("name").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {

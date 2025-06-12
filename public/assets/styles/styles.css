@@ -163,15 +163,17 @@ h1, h2, h3, button {
   display: flex;
   align-items: center;
   gap: 30px;
+  width: 85vw;
+  height: 25vh;
 }
 .bgAll {
-  width: 470px;
-  height: 270px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
   cursor: pointer;
+  width: 30%;
+  height: 100%;
 }
 .bgImg {
   height: 100%;
@@ -187,4 +189,11 @@ h1, h2, h3, button {
   justify-content: center;
   opacity: 0;
   display: none;
+}
+.easteregg {
+  position: absolute;
+  color:#000000fa;
+  bottom: 0;
+  right: 0;
+  font-size: 3px;
 }

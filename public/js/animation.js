@@ -74,6 +74,20 @@ function stepTwoBack() {
     },
   });
 }
+function stepTwoIncomplete() {
+  gsap.to(".stepTwo", {
+    x: 10,
+    repeat: 2,
+    yoyo: true,
+    duration: 0.1,
+    ease: "power1.inOut",
+    onComplete: function () {
+      gsap.to(".stepTwo", { x: 0, duration: 0.1, ease: "power1.inOut" });
+    }
+  });
+  window.stepTwoIncomplete = stepTwoIncomplete;
+
+}
 function stepTwoLeave() {
   gsap.fromTo(
     ".stepTwo",
@@ -89,6 +103,7 @@ function stepTwoLeave() {
       },
     }
   );
+
 
   gsap.fromTo(
     ".stepThree",
@@ -107,6 +122,8 @@ function stepTwoLeave() {
     }
   );
 }
+window.stepTwoLeave = stepTwoLeave;
+
 function stepThreeBack() {
   gsap.fromTo(
     ".stepThree",
