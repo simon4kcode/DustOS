@@ -1,6 +1,7 @@
 function checkForName() {
   let name = localStorage.getItem("Name");
   let selectedBackground = localStorage.getItem("selectedBackground");
+  let proxyType = localStorage.getItem("proxyType");
 
   console.log("Name:", name);
   console.log("Selected Background:", selectedBackground);
