@@ -8,7 +8,7 @@ function checkForName() {
   console.log("Proxy Type:", proxyType);
 
   if (name !== null && selectedBackground !== null && proxyType !== null) {
-    document.location.href = "main.html";
+    document.location.href = "main/";
   } else {
     console.log("Not all values are set, continuing...");
   }
