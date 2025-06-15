@@ -83,10 +83,9 @@ function stepTwoIncomplete() {
     ease: "power1.inOut",
     onComplete: function () {
       gsap.to(".stepTwo", { x: 0, duration: 0.1, ease: "power1.inOut" });
-    }
+    },
   });
   window.stepTwoIncomplete = stepTwoIncomplete;
-
 }
 function stepTwoLeave() {
   gsap.fromTo(
@@ -103,7 +102,6 @@ function stepTwoLeave() {
       },
     }
   );
-
 
   gsap.fromTo(
     ".stepThree",
@@ -185,20 +183,43 @@ function stepThreeLeave() {
   );
 }
 
-
 function homepagestart() {
-gsap.fromTo(
-  ".homepagestart",
-  {
-    opacity: 0,
-    y: "50vh",
-  },
-  {
-    opacity: 1,
-    y: "30vh",
-    duration: 1.7,
-    ease: "power2.inOut",
-  }
-);
-
+  gsap.fromTo(
+    ".homepagestart",
+    {
+      opacity: 0,
+      y: "50vh",
+    },
+    {
+      opacity: 1,
+      y: "30vh",
+      duration: 1.7,
+      ease: "power2.inOut",
+    }
+  );
+  gsap.to(".background", {
+    filter: "blur(10px)",
+  });
+}
+function swipeup() {
+  gsap.fromTo(
+    ".swipeUp",
+    {
+      opacity: 1,
+      y: "0",
+    },
+    {
+      opacity: 0,
+      y: "-100vh",
+      duration: 1.4,
+      ease: "power3.inOut",
+    }
+  );
+  gsap.to(".background", {
+    delay: 1,
+    filter: "blur(0px)",
+    onComplete: function () {
+      document.getElementById("swipeUp").style.display = "none";
+    },
+  });
 }
