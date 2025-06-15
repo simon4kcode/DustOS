@@ -6,3 +6,13 @@
     opacity: 1;
   }
 }
+@keyframes unblurbg {
+  from {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  }
+  to {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+}

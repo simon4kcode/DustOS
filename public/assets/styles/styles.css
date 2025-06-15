@@ -1,6 +1,8 @@
-body {
+body,
+main {
   height: 100vh;
   width: 100vw;
+  margin: 0px;
 }
 html {
   overflow-x: hidden;
@@ -11,9 +13,19 @@ html {
   --mainBorderColor: #000000;
   --mainPlaceholderColor: #d4d4d4;
 }
-h1, h2, h3, button {
+h1,
+h2,
+h3,
+button {
   color: var(--mainTextColor);
 }
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/* SET UP PAGE */
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+
 .welcomePage {
   overflow: hidden;
   height: 100vh;
@@ -31,6 +43,8 @@ h1, h2, h3, button {
   background-size: cover;
   background-position: center;
   transition: background 0.5s ease;
+  z-index: -111;
+  transform: scale(1.05);
 }
 .setupCard {
   position: absolute;
@@ -192,8 +206,36 @@ h1, h2, h3, button {
 }
 .easteregg {
   position: absolute;
-  color:#000000fa;
+  color: #000000fa;
   bottom: 0;
   right: 0;
   font-size: 3px;
+}
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/* HOMEPAGE */
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+
+.homepage {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.homepagestart {
+  opacity: 0;
+  margin: 0;
+  font-size: 100px;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+}
+.background {
+  border: 0px;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  animation: unblurbg 1s ease 2s forwards;
 }
