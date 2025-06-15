@@ -37,3 +37,4 @@ function LoadUserName() {
       document.getElementById("NamePlaceholder").textContent = Name;
 }
 LoadUserName();
+

@@ -225,17 +225,44 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .homepagestart {
-  opacity: 0;
-  margin: 0;
   font-size: 100px;
   font-family: "IBM Plex Sans", serif;
   font-weight: 400;
+  opacity: 0;
+}
+.swipeup {
+  border: 1px solid white;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  z-index: -100;
 }
 .background {
+  height: 100vh;
+  width: 100vw;
+  position: static;
   border: 0px;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-  animation: unblurbg 1s ease 2s forwards;
+  margin: 0;
+}
+.clicktogetstarted {
+  opacity: 0;
+  align-self: flex-end;
+  margin-top: 500px;
+  animation: ghostinhalf 0.5s ease 1.5s forwards;
 }

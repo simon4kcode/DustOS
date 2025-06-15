@@ -188,20 +188,16 @@ function stepThreeLeave() {
 
 function homepagestart() {
 gsap.fromTo(
-  ".question",
+  ".homepagestart",
   {
-    opacity: 1,
-    y: "-100vh",
+    opacity: 0,
+    y: "50vh",
   },
   {
     opacity: 1,
-    y: "100vh",
-    delay: 0.3,
-    duration: 2.5,
-    ease: CustomEase.create(
-      "customReverse",
-      "M0,0 C0,0.606 0.407,0.394 0.511,0.619 0.533,0.666 0.564,1 0.972,1"
-    ),
+    y: "30vh",
+    duration: 1.7,
+    ease: "power2.inOut",
   }
 );
 
