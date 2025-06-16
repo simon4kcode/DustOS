@@ -265,7 +265,6 @@ button {
   width: auto;
   background-color: #7e7e7e10;
   border-radius: 20px;
-  display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
@@ -282,6 +281,9 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.app:hover {
+  transform: scale(1.05);
 }
 .icons {
   font-size: 30px;

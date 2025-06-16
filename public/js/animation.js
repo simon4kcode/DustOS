@@ -198,6 +198,9 @@ function homepagestart() {
     }
   );
   gsap.to(".background", {
+    onStart: function () {
+      document.getElementById("bottomNav").style.display = "none";
+    },
     filter: "blur(10px)",
   });
 }
@@ -220,26 +223,28 @@ function swipeup() {
     filter: "blur(0px)",
     onComplete: function () {
       document.getElementById("swipeUp").style.display = "none";
-        gsap.fromTo(
-    ".app",
-    {
-      opacity: 0,
-      y: "30px",
-    },
-    {
-      opacity: 1,
-      y: "0px",
-      stagger: 0.07,
-      ease: "power3.inOut",
-      duration: 0.7,
-    }
-  );
-    gsap.to(".bottomNav", {
-      duration: 0.5,
-      opacity: 1,
-  });
+      gsap.fromTo(
+        ".app",
+        {
+          opacity: 0,
+          y: "30px",
+        },
+        {
+          onStart: function () {
+            document.getElementById("bottomNav").style.display = "flex";
+          },
 
+          opacity: 1,
+          y: "0px",
+          stagger: 0.07,
+          ease: "power3.inOut",
+          duration: 0.7,
+        }
+      );
+      gsap.to(".bottomNav", {
+        duration: 0.5,
+        opacity: 1,
+      });
     },
   });
-
 }
