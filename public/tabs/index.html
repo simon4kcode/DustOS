@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tabs with Add Button on Top</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/css/tabby-ui.min.css"
+    />
+
+  </head>
+  <body>
+    <div class="tab-wrapper">
+      <button id="addTab" aria-label="Add Tab">+</button>
+      <input type="radio" id="tab1" name="tab-group" checked hidden />
+      <div class="tabby-labels">
+        <label for="tab1" class="tabby-label" aria-selected="true">
+          Tab 1
+          <span class="close-tab" aria-label="Close Tab 1">&times;</span>
+        </label>
+      </div>
+      <div class="tabby-contents">
+        <div class="tabby-content" aria-hidden="false" id="tab1-content">
+          <iframe
+            src="https://galacticsurf.boats"
+            title="Tab 1 Content"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>

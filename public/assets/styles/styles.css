@@ -282,9 +282,6 @@ button {
   align-items: center;
   cursor: pointer;
 }
-.app:hover {
-  transform: scale(1.05);
-}
 .icons {
   font-size: 30px;
   color: var(--mainTextColor);
