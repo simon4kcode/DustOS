@@ -183,7 +183,6 @@ function stepThreeLeave() {
   );
 }
 
-/*
 function homepagestart() {
   gsap.fromTo(
     ".homepagestart",
@@ -202,7 +201,7 @@ function homepagestart() {
     filter: "blur(10px)",
   });
 }
- function swipeup() {
+function swipeup() {
   gsap.fromTo(
     ".swipeUp",
     {
@@ -221,7 +220,26 @@ function homepagestart() {
     filter: "blur(0px)",
     onComplete: function () {
       document.getElementById("swipeUp").style.display = "none";
+        gsap.fromTo(
+    ".app",
+    {
+      opacity: 0,
+      y: "30px",
+    },
+    {
+      opacity: 1,
+      y: "0px",
+      stagger: 0.07,
+      ease: "power3.inOut",
+      duration: 0.7,
+    }
+  );
+    gsap.to(".bottomNav", {
+      duration: 0.5,
+      opacity: 1,
+  });
+
     },
   });
+
 }
-*/

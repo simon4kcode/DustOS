@@ -234,12 +234,12 @@ button {
   font-weight: 400;
   opacity: 0;
 }
-.swipeup {
-  border: 1px solid white;
+.swipeUp {
   margin: 0;
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -258,11 +258,12 @@ button {
   top: 20vh;
 }
 .bottomNav {
+  opacity: 0;
   position: absolute;
   bottom: 20px;
   height: 85px;
   width: auto;
-  background-color: #7e7e7e2f;
+  background-color: #7e7e7e10;
   border-radius: 20px;
   display: flex;
   flex-direction: row;
@@ -272,14 +273,17 @@ button {
   backdrop-filter: blur(10px);
 }
 .app {
+  opacity: 0;
   height: 60px;
   width: 60px;
   border-radius: 10px;
-  background-color: #ffffff23;
+  background-color: #80808034;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .icons {
   font-size: 30px;
+  color: var(--mainTextColor);
 }
