@@ -286,3 +286,52 @@ button {
   font-size: 30px;
   color: var(--mainTextColor);
 }
+
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+/* BROWSER */
+/*----------------------------------------------------*/
+/*----------------------------------------------------*/
+.navTop {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+.topNavButtons {
+  display: flex;
+  flex-direction: row;
+}
+#search {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  color: var(--mainTextColor);
+  border-radius: 5px;
+  border: 2px solid;
+  outline: none;
+  background: none;
+  width: 80vw;
+  height: 30px;
+  border: 1px solid var(--mainBorderColor);
+}
+
+.browser {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.navLeft, .navRight {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 10px;
+
+}
+.browserIcon {
+  margin: 0 10px;
+}

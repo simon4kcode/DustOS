@@ -12,7 +12,8 @@ html {
   margin-top: 0.5rem;
   position: relative;
 }
-#addTab { /*Button*/
+#addTab {
+  /*Button*/
   width: 40px;
   height: 40px;
   padding: 0;
@@ -30,9 +31,10 @@ html {
 }
 #addTab:hover {
   transform: rotate(90deg);
-    color: #ffffff;
+  color: #ffffff;
 }
-.tabby-labels { /*Tab Bar*/
+.tabby-labels {
+  /*Tab Bar*/
   display: flex;
   background: #232323;
   border-bottom: 1px solid #000000;
@@ -40,10 +42,11 @@ html {
   scrollbar-width: thin;
   align-items: center;
 }
-.tabby-label { /*Tab*/
+.tabby-label {
+  /*Tab*/
   background: #66666643;
   position: relative;
-  padding: 0.6rem 2rem;
+  padding: 0.3rem 1.6rem;
   cursor: pointer;
   color: #ffffff;
   font-weight: 600;
@@ -53,6 +56,7 @@ html {
   user-select: none;
   transition: background-color 0.25s ease, color 0.25s ease,
     border-bottom-color 0.25s ease;
+  margin-right: 3px;
 }
 .tabby-label:hover:not([aria-selected="true"]) {
   background: #ffffff23;
@@ -62,8 +66,12 @@ html {
   border-bottom-color: #989898;
   font-weight: 700;
 }
-.close-tab { /*X button*/
-  margin-left: 8px;
+.close-tab {
+  /*X button*/
+  margin-left: 20px;
+  border: 0;
+  margin-right: 0px;
+  padding: 0;
   font-size: 15px;
   color: #888;
   cursor: pointer;
@@ -73,11 +81,13 @@ html {
   color: white;
   transform: rotate(90deg);
 }
-.tabby-contents { /*Iframe Background*/
+.tabby-contents {
+  /*Iframe Background*/
   background-color: transparent;
   height: 100vh;
 }
-.tabby-content { /*Iframe*/
+.tabby-content {
+  /*Iframe*/
   display: none;
   color: #222;
   font-size: 1rem;
@@ -104,3 +114,4 @@ iframe {
     height: 40px;
   }
 }
+

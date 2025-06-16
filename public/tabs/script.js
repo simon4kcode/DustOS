@@ -34,7 +34,7 @@ function createTab() {
   content.classList.add("tabby-content");
   content.id = `${tabId}-content`;
   content.setAttribute("aria-hidden", "true");
-  content.innerHTML = `<iframe src="../index.html" title="Tab ${tabCount} Content"></iframe>`;
+  content.innerHTML = `<iframe src="../browser/index.html" title="Tab ${tabCount} Content"></iframe>`;
   contentsContainer.appendChild(content);
   input.checked = true;
   updateAriaStates();
