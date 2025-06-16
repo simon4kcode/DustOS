@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="/assets/styles/styles.css" />
     <link rel="stylesheet" href="/assets/styles/fonts.css" />
     <link rel="stylesheet" href="/assets/styles/animations.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <!-- JS -->
     <script src="/js/loader.js" defer></script>
     <script
@@ -23,13 +26,25 @@
   </head>
   <body onload="homepagestart()">
     <div id="background" class="background"></div>
-    <main class="homepage">
-      <div class="swipeUp" id="swipeUp" onclick="swipeup()">
+    <main class="homepage" onclick="swipeup()">
+      <!--  <div class="swipeUp" id="swipeUp" onclick="swipeup()">
         <h2 class="question homepagestart">
           Welcome, <span id="NamePlaceholder">___</span>
         </h2>
         <h2 class="question2 clicktogetstarted">Click to Unlock</h2>
+      </div>-->
+      <div class="bottomNav">
+        <div class="app"><ion-icon class="icons" name="globe-outline"></ion-icon></div>
+        <div class="app"><i class="bi bi-controller icons"></i></div>
+        <div class="app"><ion-icon class="icons" name="apps-outline"></ion-icon></div>
+        <div class="app"><i class="bi bi-question-circle icons"></i></div>
+        <div class="app"><i class="bi bi-gear icons"></i></div>
       </div>
     </main>
+
+    
+    <!--ION ICONS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

@@ -183,16 +183,17 @@ function stepThreeLeave() {
   );
 }
 
+/*
 function homepagestart() {
   gsap.fromTo(
     ".homepagestart",
     {
       opacity: 0,
-      y: "50vh",
+      y: "30vh",
     },
     {
       opacity: 1,
-      y: "30vh",
+      y: "0",
       duration: 1.7,
       ease: "power2.inOut",
     }
@@ -201,7 +202,7 @@ function homepagestart() {
     filter: "blur(10px)",
   });
 }
-function swipeup() {
+ function swipeup() {
   gsap.fromTo(
     ".swipeUp",
     {
@@ -223,3 +224,4 @@ function swipeup() {
     },
   });
 }
+*/

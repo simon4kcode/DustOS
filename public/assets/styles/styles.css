@@ -228,6 +228,7 @@ button {
   text-align: center;
 }
 .homepagestart {
+  position: relative;
   font-size: 100px;
   font-family: "IBM Plex Sans", serif;
   font-weight: 400;
@@ -251,8 +252,34 @@ button {
   margin: 0;
 }
 .clicktogetstarted {
+  position: relative;
   opacity: 0;
-  align-self: flex-end;
-  margin-top: 500px;
   animation: ghostinhalf 0.5s ease 1.5s forwards;
+  top: 20vh;
+}
+.bottomNav {
+  position: absolute;
+  bottom: 20px;
+  height: 85px;
+  width: auto;
+  background-color: #7e7e7e2f;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 10px;
+  backdrop-filter: blur(10px);
+}
+.app {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-color: #ffffff23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons {
+  font-size: 30px;
 }
