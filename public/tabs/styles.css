@@ -1,6 +1,6 @@
 html {
   overflow: hidden;
-  background-color: transparent;
+  background: #232323;
 }
 .tab-wrapper {
   max-width: 100vw;
@@ -42,7 +42,6 @@ html {
 }
 .tabby-label { /*Tab*/
   background: #66666643;
-  border-radius: 20px;
   position: relative;
   padding: 0.6rem 2rem;
   cursor: pointer;
