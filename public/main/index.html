@@ -11,7 +11,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/luna-window/luna-window.css"
+    />
+
     <!-- JS -->
+    <script src="//cdn.jsdelivr.net/npm/luna-window/luna-window.js"></script>
     <script src="/js/loader.js" defer></script>
     <script
       src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"
@@ -34,8 +40,8 @@
         <h2 class="question2 clicktogetstarted">Click to Unlock</h2>
       </div>
       <div class="bottomNav" id="bottomNav">
-        <div class="app">
-          <ion-icon class="icons" name="globe-outline"></ion-icon>
+        <div class="app" onclick="showTabs()">
+          <ion-icon class="icons" name="globe-outline" ></ion-icon>
         </div>
         <div class="app"><i class="bi bi-controller icons"></i></div>
         <div class="app">
@@ -44,7 +50,7 @@
         <div class="app"><i class="bi bi-question-circle icons"></i></div>
         <div class="app"><i class="bi bi-gear icons"></i></div>
       </div>
-    </main> 
+    </main>
 
     <!--ION ICONS-->
     <script
