@@ -79,3 +79,14 @@ function showApps() {
   });
     win.show();
 }
+function showSettings() {
+  const win = new LunaWindow({
+    title: "Settings",
+    x: 600,
+    y: 0,
+    width: 900,
+    height: 650,
+    content: `${window.location.origin}/settings`,
+  });
+    win.show();
+}

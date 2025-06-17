@@ -84,19 +84,6 @@ function ABCloak(redirectToEducationalSite) {
 if (localStorage.getItem("autoAB") == "true") {
   ABCloak(true);
 }
-function checkPopupsBlocked() {
-  const testPopup = window.open("", "_blank");
-
-  if (
-    !testPopup ||
-    testPopup.closed ||
-    typeof testPopup.closed === "undefined"
-  ) {
-    alert("Popups needs to be enabled");
-  } else {
-    testPopup.close();
-  }
-}
 function tabpresets(title, faviconURL) {
   // Change the website's title
   document.title = title;

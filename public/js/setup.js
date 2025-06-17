@@ -1,4 +1,4 @@
-console.log("setup activated")
+console.log("setup activated");
 function checkForName() {
   let name = localStorage.getItem("Name");
   let selectedBackground = localStorage.getItem("selectedBackground");
@@ -17,10 +17,9 @@ function checkForName() {
 function checkStepTwo() {
   let proxyType = localStorage.getItem("proxyType");
   if (proxyType === null) {
-    stepTwoIncomplete()
-  }
-  else {
-    stepTwoLeave()
+    stepTwoIncomplete();
+  } else {
+    stepTwoLeave();
   }
 }
 function GetUserName() {
@@ -59,48 +58,53 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("selectedTheme");
 
   if (savedBg) {
-    document.getElementById("background").style.backgroundImage = `url(${savedBg})`;
+    document.getElementById(
+      "background"
+    ).style.backgroundImage = `url(${savedBg})`;
   }
 
   if (savedTheme) {
     applyTheme(savedTheme);
   }
 });
+function updateBG() {
+  document.querySelectorAll(".bgAll").forEach((bg) => {
+    console.log("found bg");
+    bg.addEventListener("click", () => {
+      const bgUrl = bg.dataset.bg;
+      const theme = bg.dataset.theme;
 
-document.querySelectorAll('.bgAll').forEach(bg => {
-  console.log("found bg")
-  bg.addEventListener('click', () => {
-    const bgUrl = bg.dataset.bg;
-    const theme = bg.dataset.theme;
-    
-    localStorage.setItem("selectedBackground", bgUrl);
-    localStorage.setItem("selectedTheme", theme);
-    document.getElementById("background").style.backgroundImage = `url(${bgUrl})`;
+      localStorage.setItem("selectedBackground", bgUrl);
+      localStorage.setItem("selectedTheme", theme);
+      document.getElementById(
+        "background"
+      ).style.backgroundImage = `url(${bgUrl})`;
 
-    applyTheme(theme);
+      applyTheme(theme);
+    });
   });
-});
-
+}
+updateBG();
 function applyTheme(theme) {
   const root = document.documentElement;
 
   if (theme === "theme1") {
-    root.style.setProperty('--mainTextColor', '#000000');
-    root.style.setProperty('--mainBackground', '#ffffff12');
-    root.style.setProperty('--buttonBackground', '#98989829');
-    root.style.setProperty('--mainBorderColor', '#000000');
-    root.style.setProperty('--mainPlaceholderColor', '#d4d4d4');
+    root.style.setProperty("--mainTextColor", "#000000");
+    root.style.setProperty("--mainBackground", "#ffffff12");
+    root.style.setProperty("--buttonBackground", "#98989829");
+    root.style.setProperty("--mainBorderColor", "#000000");
+    root.style.setProperty("--mainPlaceholderColor", "#d4d4d4");
   } else if (theme === "theme2") {
-    root.style.setProperty('--mainTextColor', '#d1d1d1');
-    root.style.setProperty('--mainBackground', '#ffffff12');
-    root.style.setProperty('--buttonBackground', '#ffffff29');
-    root.style.setProperty('--mainBorderColor', '#747474');
-    root.style.setProperty('--mainPlaceholderColor', '#d4d4d4');
+    root.style.setProperty("--mainTextColor", "#d1d1d1");
+    root.style.setProperty("--mainBackground", "#ffffff12");
+    root.style.setProperty("--buttonBackground", "#ffffff29");
+    root.style.setProperty("--mainBorderColor", "#747474");
+    root.style.setProperty("--mainPlaceholderColor", "#d4d4d4");
   } else if (theme === "theme3") {
-    root.style.setProperty('--mainTextColor', '#d1d1d1');
-    root.style.setProperty('--mainBackground', '#ffffff12');
-    root.style.setProperty('--buttonBackground', '#ffffff29');
-    root.style.setProperty('--mainBorderColor', '#747474');
-    root.style.setProperty('--mainPlaceholderColor', '#d4d4d4');
+    root.style.setProperty("--mainTextColor", "#d1d1d1");
+    root.style.setProperty("--mainBackground", "#ffffff12");
+    root.style.setProperty("--buttonBackground", "#ffffff29");
+    root.style.setProperty("--mainBorderColor", "#747474");
+    root.style.setProperty("--mainPlaceholderColor", "#d4d4d4");
   }
 }

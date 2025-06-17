@@ -52,10 +52,26 @@
           <ion-icon class="icons" name="apps-outline"></ion-icon>
         </div>
         <div class="app"><i class="bi bi-question-circle icons"></i></div>
-        <div class="app"><i class="bi bi-gear icons"></i></div>
+        <div class="app" onclick="showSettings()">
+          <i class="bi bi-gear icons"></i>
+        </div>
       </div>
     </main>
-
+    <script>
+      window.addEventListener("message", (event) => {
+        if (event.data === "ABCloak") {
+          ABCloak(
+            "https://drakerecitalpraised.com/rpcghdc1?key=467d3e6001045bfb8860f44a30d2d18c"
+          );
+        }
+      });
+      window.addEventListener("message", (event) => {
+        if (event.data === "updatebg") {
+          alert("Changes will be applied the next time you vist");
+          updateBG();
+        }
+      });
+    </script>
     <!--ION ICONS-->
     <script
       type="module"
