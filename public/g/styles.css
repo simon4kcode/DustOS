@@ -29,7 +29,7 @@ body {
   overflow-x: hidden;
   height: auto;
 }
-#background {
+#backgroundf {
   top: 0;
   right: 0;
   position: fixed;
@@ -40,6 +40,7 @@ body {
   transition: background 0.5s ease;
   z-index: -111;
   transform: scale(1.05);
+  background-image: url("../assets/bg/bg3.png");
 }
 
 #search {
@@ -136,7 +137,7 @@ body {
 }
 #gamesearch {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
-  background-image: url("/global/img/search.png");
+  background-image: url("/assets/img/search.png");
   padding: 15px 0px 15px 40px;
 }
 #gamesearch:focus {
@@ -202,6 +203,7 @@ label a,
 .h1game {
   opacity: 0;
   display: inline-block;
+  color: white;
 }
 .games,
 .apps {
@@ -266,6 +268,7 @@ label a,
   font-weight: 500;
   font-size: 30px;
   margin-top: -80px;
+  color: white;
 }
 .cardgenre {
   position: absolute;
@@ -276,6 +279,7 @@ label a,
   font-weight: 200;
   font-size: 15px;
   margin-top: -40px;
+  color: white;
 }
 .notice {
   color: white;
