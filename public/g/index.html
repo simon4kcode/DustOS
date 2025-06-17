@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preload" href="" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+    <link rel="stylesheet" href="/assets/styles/fonts.css" />
+    <link rel="stylesheet" href="/assets/styles/animations.css" />
+    <script src="/chemical.js"></script>
+    <script src="/chemical.components.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/gsap.js" defer></script>
+    <script src="g.js" defer></script>
+    <script src="../js/loader.js" defer></script>
+    <script src="animation.js" defer></script>
+  </head>
+  <div id="background"></div>
+
+  <body>
+    <h1 class="gameTitle">
+      <span class="h1game game1">G</span>
+      <span class="h1game game2">A</span>
+      <span class="h1game game3">M</span>
+      <span class="h1game game4">E</span>
+      <span class="h1game game5">S</span>
+    </h1>
+    <div class="gamebody">
+      <div class="gamefilters">
+        <input
+          type="text"
+          id="gamesearch"
+          class="gamesearch"
+          placeholder="Search Gam-es or Tags"
+        />
+        <div class="genre-filters">
+          <label>
+            <input type="checkbox" class="genre-filter" value="Action" />
+            <div class="checkbox_highlight"><a>Action/Shooter</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Arcade" />
+            <div class="checkbox_highlight"><a>Arcade</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Rhythm" />
+            <div class="checkbox_highlight"><a>Rhythm</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Horror" />
+            <div class="checkbox_highlight"><a>Horror</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Simulation" />
+            <div class="checkbox_highlight"><a>Simulation</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Tower Defense" />
+            <div class="checkbox_highlight"><a>Tower Defense</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="car" />
+            <div class="checkbox_highlight"><a>Racing</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Multiplayer" />
+
+            <div class="checkbox_highlight"><a>Multiplayer</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Platformer" />
+
+            <div class="checkbox_highlight"><a>Platformer</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="Casual" />
+
+            <div class="checkbox_highlight"><a>Casual</a></div>
+          </label>
+        </div>
+      </div>
+      <div class="games">
+        <div class="randomcard" id="randomGameButton">
+          <div class="randombg"></div>
+          <div class="randomblob"></div>
+          <p>Surprise me!</p>
+        </div>
+      </div>
+    </div>
+    <p class="notice">
+      All Games are carefully tested. If you find one that doesn't work, please
+      notify us in
+      <span
+        class="discordp"
+        onclick="window.location.href='https://discord.gg/Dvh2veTWU4';"
+        >Discord</span
+      >
+    </p>
+    <iframe id="web" data-controls="controls" is="chemical-iframe"></iframe>
+    <input
+      spellcheck="false"
+      autocomplete="off"
+      id="search"
+      data-frame="web"
+      data-auto-https
+      data-search-engine="https://www.bing.com/search?q=%s"
+      placeholder="Search or Enter a URL"
+      is="chemical-input"
+      class="gameSearchinput"
+    />
+    <iframe id="web" data-controls="controls" is="chemical-iframe"></iframe>
+    <button
+      style="opacity: 0"
+      data-for="search"
+      is="chemical-button"
+      id="submitbutton"
+    >
+      Go!
+    </button>
+    <section id="controls" is="chemical-controls">
+      <button onclick="chemical.componentAction('back', 'web')">Back</button>
+      <button onclick="chemical.componentAction('forward', 'web')">
+        Forward
+      </button>
+      <button onclick="chemical.componentAction('reload', 'web')">
+        Reload
+      </button>
+      <button onclick="chemical.componentAction('close', 'web')">Close</button>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="load.css" />
+    <link rel="stylesheet" href="/assets/styles/fonts.css" />
+    <script src="/global/js/eruda.js"></script>
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-MXG0KPC43X"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-MXG0KPC43X");
+  </script>
+
+  <body>
+    <section class="controls">
+      <button class="exporteditor web" onclick="exportSave()">
+        Export Saves
+      </button>
+      <button class="back web" onclick="back()">Back</button>
+      <button class="forward web" onclick="forward()">Forward</button>
+      <button class="reload web" onclick="reload()">Reload</button>
+      <button class="close web" onclick="window.location.href='/g';">
+        Close
+      </button>
+    </section>
+    <iframe
+      src="../assets/g/jap/levelEditor/"
+      frameborder="0"
+      id="game"
+    ></iframe>
+    <script>
+      function reload() {
+        const frame = document.getElementById("game");
+        frame.contentWindow.location.reload();
+      }
+
+      function back() {
+        const frame = document.getElementById("game");
+        frame.contentWindow.history.back();
+      }
+
+      function forward() {
+        const frame = document.getElementById("game");
+        frame.contentWindow.history.forward();
+      }
+      function exporteditor() {
+        let editorsave = localStorage.getItem("just-an-editor-save");
+        console.log(editorsave);
+        navigator.clipboard.writeText(editorsave);
+      }
+
+      function exportSave() {
+        let savename = prompt("What's the name of your variable?");
+        if (savename === null) {
+          console.log("User canceled. Exiting script.");
+          throw new Error("Script stopped by user.");
+        }
+        console.log("You entered:", savename);
+        let saves = JSON.parse(localStorage.getItem("just-an-editor-save"));
+        let text = JSON.stringify(saves);
+        navigator.clipboard.writeText(text).then(
+          () => {
+            alert("Level data copied to clipboard!");
+          },
+          () => {
+            alert("Export failed. Please try again.");
+          }
+        );
+      }
+    </script>
+    <script>
+      function inspect() {
+        var script = document.createElement("script");
+        script.src = "/global/js/eruda.js";
+        document.body.append(script);
+        script.onload = function () {
+          eruda.init();
+        };
+      }
+      inspect();
+    </script>
+  </body>
+</html>
