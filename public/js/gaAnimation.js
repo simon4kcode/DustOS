@@ -72,7 +72,7 @@ function gameloadanimation() {
     },
     {
       delay: 0.5,
-      stagger: 0.1,
+      stagger: 0.08,
       opacity: 1,
       y: 0,
       duration: 1,

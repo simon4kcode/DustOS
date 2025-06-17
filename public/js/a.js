@@ -1,4 +1,4 @@
-fetch("g.json")
+fetch("/assets/json/a.json")
   .then((response) => response.json())
   .then((games) => {
     const appsContainer = document.querySelector(".games");
