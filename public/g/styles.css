@@ -13,6 +13,7 @@ html {
   --circle-border: #333;
   --button-background: rgb(49, 49, 49);
   --button-background-light: #bdbdbdc9;
+  --width: 1440px;
 }
 main {
   margin: 0;
@@ -21,7 +22,6 @@ main {
   align-items: center;
   color: var(--h1);
   margin-left: 170px;
-  --width: 1440px;
   z-index: 10;
   overflow-x: hidden;
 }
@@ -111,7 +111,7 @@ body {
 .gamefilters {
   opacity: 0;
   animation: ghostin 1s ease-out 0.5s forwards;
-  width: 1440px;
+  width: var(--width);
   display: flex;
   flex-direction: column;
 }
@@ -205,7 +205,7 @@ label a,
 }
 .games,
 .apps {
-  width: 1440px;
+  width: var(--width);
   height: auto;
   display: flex;
   flex-direction: row;
@@ -409,17 +409,17 @@ label a,
 
 /*GAMES / SEARCH BAR*/
 @media (max-width: 1590px) {
-  main {
+  html {
     --width: 1080px;
   }
 }
 @media (max-width: 1250px) {
-  main {
+  html {
     --width: 700px;
   }
 }
 @media (max-width: 870px) {
-  main {
+  html {
     --width: 335px;
   }
 }

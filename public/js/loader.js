@@ -38,17 +38,24 @@ function LoadUserName() {
 LoadUserName();
 
 function showTabs() {
-  const filePath = new URL("../index.html", window.location.href).pathname;
-  const fileUrl = `file://tabs/index.html`;
-
   const win = new LunaWindow({
     title: "Galaxy Browser",
     x: 50,
     y: 50,
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 800,
     content: `${window.location.origin}/tabs`,
   });
-
-  win.show();
+    win.show();
+}
+function showGames() {
+  const win = new LunaWindow({
+    title: "Games",
+    x: 500,
+    y: 20,
+    width: 1200,
+    height: 800,
+    content: `${window.location.origin}/g`,
+  });
+    win.show();
 }
