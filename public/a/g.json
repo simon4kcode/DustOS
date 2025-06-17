@@ -1,0 +1,184 @@
+[
+  {
+    "name": "Amazon",
+    "url": "https://amazon.com/",
+    "image": "amazon.jpg",
+    "genre": "Shopping"
+  },
+  {
+    "name": "AniCrush",
+    "url": "https://anicrush.to/",
+    "image": "anicrush.png",
+    "genre": "Streaming"
+  },
+  {
+    "name": "AnimePahe",
+    "url": "https://animepahe.ru/",
+    "image": "pahe.png",
+    "genre": "Streaming"
+  },
+  {
+    "name": "AniWatch",
+    "url": "https://ww2.aniwatch.fit/",
+    "image": "aniwatch.jpg",
+    "genre": "Streaming"
+  },
+  {
+    "name": "AniWave",
+    "url": "https://aniwave.best/home",
+    "image": "aniwave.jpg",
+    "genre": "Streaming"
+  },
+
+  {
+    "name": "AutoEmbed",
+    "url": "https://watch.autoembed.cc/",
+    "image": "404.png",
+    "genre": "Streaming"
+  },
+  {
+    "name": "Chess",
+    "url": "https://chess.com",
+    "image": "chess.png",
+    "genre": "Gaming"
+  },
+  {
+    "name": "Cool Math Games",
+    "url": "https://coolmathgames.com",
+    "image": "math.jpeg",
+    "genre": "Gaming"
+  },
+  {
+    "name": "COMET-HANG3R",
+    "url": "https://pxlnovae.pages.dev/",
+    "image": "comet.png",
+    "genre": "exploit"
+  },
+  {
+    "name": "Crazy Games",
+    "url": "https://crazygames.com",
+    "image": "crazygames.jpg",
+    "genre": "Gaming"
+  },
+  {
+    "name": "Demonin's Item Shop",
+    "url": "https://demonin.com/games/",
+    "image": "demonin.jpg",
+    "genre": "Gaming"
+  },
+
+  {
+    "name": "Discord",
+    "url": "https://discord.com/app",
+    "image": "Discord.webp",
+    "genre": "Social Media"
+  },
+  {
+    "name": "Galaxy.Click",
+    "url": "https://galaxy.click/",
+    "image": "galaxyclick.png",
+    "genre": "Gaming"
+  },
+
+  {
+    "name": "GeForce Now",
+    "url": "https://play.geforcenow.com/mall/#/loginwall",
+    "image": "Geforce.webp",
+    "genre": "Cloud Gaming"
+  },
+  {
+    "name": "Google Gemini",
+    "url": "https://gemini.google.com/app",
+    "image": "gemini.png",
+    "genre": "AI"
+  },
+
+  {
+    "name": "Github",
+    "url": "https://github.com",
+    "image": "GitHub.webp",
+    "genre": "Development"
+  },
+  {
+    "name": "Luna Amazon",
+    "url": "https://luna.amazon.com/",
+    "image": "luna.jpg",
+    "genre": "Cloud Gaming"
+  },
+  {
+    "name": "NovaFork",
+    "url": "https://novafork.com/",
+    "image": "novafork.jpg",
+    "genre": "Streaming"
+  },
+  {
+    "name": "Paramount Plus",
+    "url": "https://www.paramountplus.com",
+    "image": "paramount.png",
+    "genre": "Streaming"
+  },
+  {
+    "name": "Perchance Image AI",
+    "url": "https://perchance.org/ai-text-to-image-generator",
+    "image": "perchance.jpg",
+    "genre": "AI"
+  },
+  {
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com/",
+    "image": "pinterest.jpg",
+    "genre": "Social Media"
+  },
+  {
+    "name": "Pixlr",
+    "url": "https://pixlr.com/",
+    "image": "pixlr.webp",
+    "genre": "Design"
+  },
+  {
+    "name": "Poki",
+    "url": "https://poki.com/",
+    "image": "poki.webp",
+    "genre": "Gaming"
+  },
+  
+  {
+    "name": "Squibler AI",
+    "url": "https://www.squibler.io/ai-text-generator/",
+    "image": "squibler.jpg",
+    "genre": "AI"
+  },
+
+  {
+    "name": "TikTok",
+    "url": "https://TikTok.com",
+    "image": "TikTok.webp",
+    "genre": "Social Media"
+  },
+  {
+    "name": "VS Code",
+    "url": "https://vscode.dev/",
+    "image": "vs.webp",
+    "genre": "Development"
+  },
+  
+  {
+    "name": "Writify AI",
+    "url": "https://writify.ai/tool/ai-chat/",
+    "image": "writify.jpg",
+    "genre": "AI"
+  },
+
+  {
+    "name": "X (Twitter)",
+    "url": "https://x.com",
+    "image": "x.webp",
+    "genre": "Social Media"
+  },
+  {
+    "name": "Y8 Games",
+    "url": "https://www.y8.com/",
+    "image": "y8.jpg",
+    "genre": "Gaming"
+  }
+]
