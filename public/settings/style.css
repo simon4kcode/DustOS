@@ -13,6 +13,7 @@ html {
   --circle-border: #333;
   --button-background: rgb(49, 49, 49);
   --button-background-light: #bdbdbdc9;
+  min-height: 2500px;
 }
 main {
   margin: 0;
@@ -24,10 +25,12 @@ main {
   --width: 1440px;
   z-index: 10;
   overflow-x: hidden;
+  min-height: 2500px;
 }
 body {
   overflow-x: hidden;
   height: auto;
+  min-height: 2500px;
 }
 .background {
   background-color: var(--background-color);
@@ -171,14 +174,17 @@ body {
   height: 200vh;
 }
 #tabname::placeholder,
+.tabname::placeholder,
 #favicon::placeholder {
   color: var(--button-background-light);
 }
 #tabname,
+.tabname,
 #favicon {
   border-bottom: 2px solid var(--input-border);
 }
 #tabname:focus,
+.tabname:focus,
 #favicon:focus {
   border-bottom: 1px solid var(--input-border-focus);
 }
@@ -221,6 +227,7 @@ body {
 }
 .settingBtn {
   height: 50px;
+  overflow: hidden;
   width: 100px;
   z-index: 1;
   background-color: var(--button-background);
@@ -306,7 +313,8 @@ body {
 button:hover {
   box-shadow: 0 0 30px var(--input-border);
 }
-.dropdown {
+.dropdown,
+.prxydropdown {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -315,12 +323,14 @@ button:hover {
   width: 20vh;
   transition: 0.3s;
 }
-.dropdown a {
+.dropdown a,
+.prxydropdown a {
   font-family: Open Sans;
   transition: 0.4s;
   background-color: #0000004f;
 }
-.dropdown a:hover {
+.dropdown a:hover,
+.prxydropdown a:hover {
   background-color: #00000002;
 }
 .tabpresets {
@@ -333,6 +343,12 @@ button:hover {
   flex-direction: column;
   opacity: 1;
   height: 305px;
+}
+.settingcontainer:hover .prxydropdown {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  height: 170px;
 }
 .pp {
   color: var(--h1);
@@ -427,4 +443,28 @@ button:hover {
 html.is-animating .transition-fade {
   opacity: 0;
   filter: blur(10px);
+}
+.bgSelector {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 55vw;
+  height: 18vh;
+}
+.bgAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 30%;
+  height: 100%;
+}
+.bgImg {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }

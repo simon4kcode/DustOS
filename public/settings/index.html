@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/assets/styles/fonts.css" />
     <script src="/settings/setting.js"></script>
+    <script src="/js/setup.js" defer></script>
     <script src="/global/js/script.js"></script>
+    <script src="/chemical.js"></script>
     <script
       src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"
       defer
@@ -24,7 +26,7 @@
   </head>
   <body>
     <div class="background"></div>
-    <main>
+    <main style="overflow-x: hidden">
       <h1 class="settingTitle">
         <span class="h1game settings1">S</span>
         <span class="h1game settings2">E</span>
@@ -36,6 +38,42 @@
         <span class="h1game settings8">S</span>
       </h1>
       <div class="settings">
+        <div class="settingcontainer">
+          <h2 class="settingName">Change your name</h2>
+          <input
+            class="gamesearch tabname"
+            id="name"
+            type="text setupInput"
+            style="width: 150px !important"
+            placeholder="Enter name"
+          />
+        </div>
+        <div class="settingcontainer">
+          <h2 class="settingName">Change Proxy</h2>
+          <h3 class="settingDesc">
+            Ultraviolet is most stable. Scramjet is fast and supports YouTube.
+            Rammerhead is slow and outdated but still gets the job done.
+          </h3>
+          <button class="settingBtn">Select</button>
+          <div class="prxydropdown" id="proxySelector">
+            <a
+              class="tabpresets"
+              onclick="localStorage.setItem('proxyType', 'uv');"
+              >Ultraviolet</a
+            >
+            <a
+              class="tabpresets"
+              onclick="localStorage.setItem('proxyType', 'scramjet');"
+              >Scramjet</a
+            >
+            <a
+              class="tabpresets"
+              onclick="localStorage.setItem('proxyType', 'rh');"
+              >Rammerhead</a
+            >
+          </div>
+        </div>
+
         <div class="settingcontainer">
           <h2 class="settingName">About:Blank Cloaker</h2>
           <h3 class="settingDesc">About:Blank will hide the website's URL</h3>
@@ -64,7 +102,7 @@
         </div>
         <div class="settingcontainer">
           <h2 class="settingName">Tab Presets</h2>
-          <h3 class="settingDesc"></h3>
+          <h3 class="settingDesc">Change the way the tab looks</h3>
           <button class="settingBtn">Selector</button>
           <div class="dropdown">
             <a
@@ -125,6 +163,32 @@
             style="width: 250px !important"
             placeholder="Enter img URL"
           />
+        </div>
+        <div class="settingcontainer">
+          <h2 class="settingName">Change Background</h2>
+          <div class="bgSelector">
+            <div
+              class="bgAll bg1"
+              data-bg="/assets/bg/bg1.png"
+              data-theme="theme2"
+            >
+              <img class="bgImg" src="/assets/bg/bg1.png" alt="" />
+            </div>
+            <div
+              class="bgAll bg2"
+              data-bg="/assets/bg/bg2.png"
+              data-theme="theme2"
+            >
+              <img class="bgImg" src="/assets/bg/bg2.png" alt="" />
+            </div>
+            <div
+              class="bgAll bg3"
+              data-bg="/assets/bg/bg4.png"
+              data-theme="theme3"
+            >
+              <img class="bgImg" src="/assets/bg/bg4.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </main>

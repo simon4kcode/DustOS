@@ -1,3 +1,4 @@
+console.log("setup activated")
 function checkForName() {
   let name = localStorage.getItem("Name");
   let selectedBackground = localStorage.getItem("selectedBackground");
@@ -67,13 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.querySelectorAll('.bgAll').forEach(bg => {
+  console.log("found bg")
   bg.addEventListener('click', () => {
     const bgUrl = bg.dataset.bg;
     const theme = bg.dataset.theme;
-
-    document.getElementById("background").style.backgroundImage = `url(${bgUrl})`;
+    
     localStorage.setItem("selectedBackground", bgUrl);
     localStorage.setItem("selectedTheme", theme);
+    document.getElementById("background").style.backgroundImage = `url(${bgUrl})`;
 
     applyTheme(theme);
   });
