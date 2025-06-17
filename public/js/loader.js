@@ -59,3 +59,14 @@ function showGames() {
   });
     win.show();
 }
+function showApps() {
+  const win = new LunaWindow({
+    title: "Apps",
+    x: 600,
+    y: 0,
+    width: 1200,
+    height: 800,
+    content: `${window.location.origin}/a`,
+  });
+    win.show();
+}
