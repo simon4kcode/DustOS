@@ -34,14 +34,14 @@
     <main class="browser">
       <div class="navTop">
         <div class="navLeft">
-          <div class="browseBtn">
-            <ion-icon class="icons browserIcon" name="arrow-back-outline"></ion-icon>
+          <div class="browseBtn" onclick="chemical.componentAction('back', 'web')">
+            <ion-icon class="icons browserIcon" name="arrow-back-outline" ></ion-icon>
           </div>
-          <div class="browseBtn">
-            <ion-icon class="icons browserIcon" name="arrow-forward-outline"></ion-icon>
+          <div class="browseBtn" onclick="chemical.componentAction('forward', 'web')">
+            <ion-icon class="icons browserIcon" name="arrow-forward-outline" ></ion-icon>
           </div>
-          <div class="browseBtn">
-            <i class="icons bi bi-arrow-clockwise browserIcon"></i>
+          <div class="browseBtn" onclick="chemical.componentAction('reload', 'web')">
+            <i class="icons bi bi-arrow-clockwise browserIcon" ></i>
           </div>
         </div>
         <input
@@ -55,10 +55,11 @@
           is="chemical-input"
         />
         <div class="navRight">
-          <div class="browseBtn"><i class="icons bi bi-fullscreen browserIcon"></i></div>
+          <div class="browseBtn" onclick="fullscreen()"><i class="icons bi bi-fullscreen browserIcon" ></i></div>
         </div>
       </div>
       <iframe id="web" data-controls="controls" is="chemical-iframe"></iframe>
+
     </main>
     <script
       type="module"

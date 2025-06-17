@@ -22,3 +22,16 @@ window.addEventListener('DOMContentLoaded', decodeIframeUrl);
 
 // Automatically updates (I feel so smart figuring this out)
 document.getElementById('web').addEventListener('load', decodeIframeUrl);
+
+
+// Fullscreen stuff
+function fullscreen() {
+  const iframe = document.getElementById('web');
+  if (iframe.requestFullscreen) {
+    iframe.requestFullscreen();
+  } else if (iframe.webkitRequestFullscreen) { // Safari
+    iframe.webkitRequestFullscreen();
+  } else {
+    console.warn("Fullscreen API is not supported on this browser.");
+  }
+}
