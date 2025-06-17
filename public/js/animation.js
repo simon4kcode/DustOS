@@ -200,6 +200,7 @@ function homepagestart() {
   gsap.to(".background", {
     onStart: function () {
       document.getElementById("bottomNav").style.display = "none";
+      document.getElementById("timeDisplay").style.display = "none";
     },
     filter: "blur(10px)",
   });
@@ -232,6 +233,7 @@ function swipeup() {
         {
           onStart: function () {
             document.getElementById("bottomNav").style.display = "flex";
+            document.getElementById("timeDisplay").style.display = "flex";
           },
 
           opacity: 1,
@@ -242,6 +244,10 @@ function swipeup() {
         }
       );
       gsap.to(".bottomNav", {
+        duration: 0.5,
+        opacity: 1,
+      });
+      gsap.to(".timeDisplay", {
         duration: 0.5,
         opacity: 1,
       });

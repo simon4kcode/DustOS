@@ -37,6 +37,15 @@ function LoadUserName() {
 }
 LoadUserName();
 
+function updateTime() {
+  const now = new Date();
+  const timeString = now.toLocaleTimeString(); 
+  document.getElementById('timeDisplay').textContent = timeString;
+}
+
+setInterval(updateTime, 1000);
+updateTime(); 
+
 function showTabs() {
   const win = new LunaWindow({
     title: "Galaxy Browser",

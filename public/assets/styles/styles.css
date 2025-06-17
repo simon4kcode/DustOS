@@ -257,6 +257,13 @@ button {
   animation: ghostinhalf 0.5s ease 1.5s forwards;
   top: 20vh;
 }
+#timeDisplay {
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--mainTextColor);
+  opacity: 0;
+}
 .bottomNav {
   opacity: 0;
   position: absolute;
