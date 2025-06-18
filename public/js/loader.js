@@ -51,8 +51,8 @@ function showTabs() {
     title: "Galaxy Browser",
     x: 50,
     y: 50,
-    width: 600,
-    height: 400,
+    width: 800,
+    height: 600,
     content: `${window.location.origin}/tabs`,
   });
     win.show();
@@ -84,7 +84,7 @@ function showSettings() {
     title: "Settings",
     x: 600,
     y: 0,
-    width: 900,
+    width: 1000,
     height: 650,
     content: `${window.location.origin}/settings`,
   });

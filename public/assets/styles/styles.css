@@ -350,6 +350,7 @@ button {
   color: #d1d1d1 !important;
 }
 #web {
+  overflow: hidden;
   width: 100vw;
   height: 93%;
   border: 0px;
@@ -374,18 +375,18 @@ button {
   opacity: 0;
   font-size: 100px;
   color: #d1d1d1;
+  position: fixed;
 }
 
-.luna-window {
-  border-radius: 10px !important;
-  border: 0px solid #0000002b !important;
-}
-.luna-window-title-bar {
-  background: #464646 !important;
-}
 .luna-window-title-bar-right {
   color: white;
 }
 .luna-window-title {
   color: white;
+}
+.luna-window-icon {
+  transition-duration: 0.2s;
+}
+.luna-window-icon:hover {
+  background-color: #ffffff1b !important;
 }

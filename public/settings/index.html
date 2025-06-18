@@ -133,7 +133,7 @@
               onclick="tabpresets('Google', 'https://www.gstatic.com/images/branding/searchlogo/ico/favicon.ico')"
               >Google</a
             >
-            <a class="tabpresets" onclick="tabpresets('GalaxyV4', '')">Reset</a>
+            <a class="tabpresets" onclick="tabpresets('GalaxyV5', '')">Reset</a>
           </div>
         </div>
 
@@ -243,7 +243,7 @@
   function updateTitleFromInput() {
     const input = document.getElementById("tabname");
     if (input) {
-      const newTitle = input.value.trim() || "GalaxyV4"; // Default to GalaxyV4 if empty
+      const newTitle = input.value.trim() || "GalaxyV5"; // Default to GalaxyV5 if empty
       document.title = newTitle;
 
       // Store value in localStorage
@@ -254,7 +254,7 @@
   // Load saved values on page load
   document.addEventListener("DOMContentLoaded", () => {
     const savedFavicon = localStorage.getItem("faviconInputValue");
-    const savedTitle = localStorage.getItem("tabInputValue") || "GalaxyV4"; // Default if empty
+    const savedTitle = localStorage.getItem("tabInputValue") || "GalaxyV5"; // Default if empty
 
     if (savedFavicon) {
       const link =

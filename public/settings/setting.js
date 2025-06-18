@@ -123,7 +123,7 @@ function updateFaviconFromInput() {
 function updateTitleFromInput() {
   const input = document.getElementById("tabname");
   if (input) {
-    const newTitle = input.value.trim() || "GalaxyV4"; // Default to GalaxyV4 if empty
+    const newTitle = input.value.trim() || "Galaxy54"; // Default to GalaxyV5 if empty
     document.title = newTitle;
 
     // Store value in localStorage
@@ -134,7 +134,7 @@ function updateTitleFromInput() {
 // Load saved values on page load
 document.addEventListener("DOMContentLoaded", () => {
   const savedFavicon = localStorage.getItem("faviconInputValue");
-  const savedTitle = localStorage.getItem("tabInputValue") || "GalaxyV4"; // Default if empty
+  const savedTitle = localStorage.getItem("tabInputValue") || "GalaxyV5"; // Default if empty
 
   if (savedFavicon) {
     const link =
