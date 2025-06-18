@@ -14,6 +14,24 @@ function checkForName() {
     console.log("Not all values are set, continuing...");
   }
 }
+document.getElementById("proxySelector").addEventListener("change", function() {
+    // Hide all descriptions first
+    document.querySelectorAll(".aboutproxyh3").forEach(desc => {
+        desc.style.display = "none";
+    });
+
+    // Get the selected value
+    const selectedValue = this.value;
+
+    // Show the corresponding description
+    if (selectedValue === "uv") {
+        document.querySelector(".aboutUV").style.display = "flex";
+    } else if (selectedValue === "scramjet") {
+        document.querySelector(".aboutSJ").style.display = "flex";
+    } else if (selectedValue === "rh") {
+        document.querySelector(".aboutRH").style.display = "flex";
+    }
+});
 function checkStepTwo() {
   let proxyType = localStorage.getItem("proxyType");
   if (proxyType === null) {
@@ -84,6 +102,7 @@ function updateBG() {
     });
   });
 }
+
 updateBG();
 function applyTheme(theme) {
   const root = document.documentElement;

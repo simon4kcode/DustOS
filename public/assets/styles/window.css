@@ -42,7 +42,7 @@ html {
   pointer-events: all;
   display: flex;
   flex-flow: column;
-  border: 1px solid #ffffff5a;
+  border: 1px solid #6d6d6d;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),

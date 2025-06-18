@@ -111,6 +111,9 @@ function stepTwoLeave() {
     {
       onStart: function () {
         document.getElementById("stepThree").style.display = "flex";
+        document.querySelectorAll(".aboutproxyh3").forEach((el) => {
+          el.style.display = "none";
+        });
       },
       x: "0vw",
       delay: 0.6,
