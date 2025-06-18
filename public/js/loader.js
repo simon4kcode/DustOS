@@ -60,10 +60,10 @@ function showTabs() {
 function showGames() {
   const win = new LunaWindow({
     title: "Games",
-    x: 500,
-    y: 20,
+    x: 100,
+    y: 80,
     width: 600,
-    height: 400,
+    height: 300,
     content: `${window.location.origin}/g`,
   });
     win.show();
@@ -71,10 +71,10 @@ function showGames() {
 function showApps() {
   const win = new LunaWindow({
     title: "Apps",
-    x: 600,
+    x: 200,
     y: 0,
-    width: 600,
-    height: 400,
+    width: 800,
+    height: 500,
     content: `${window.location.origin}/a`,
   });
     win.show();
@@ -82,10 +82,10 @@ function showApps() {
 function showSettings() {
   const win = new LunaWindow({
     title: "Settings",
-    x: 600,
+    x: 300,
     y: 0,
-    width: 1000,
-    height: 650,
+    width: 800,
+    height: 500,
     content: `${window.location.origin}/settings`,
   });
     win.show();
