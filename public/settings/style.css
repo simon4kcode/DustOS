@@ -508,3 +508,7 @@ html.is-animating .transition-fade {
   width: 100%;
   border-radius: 10px;
 }
+.filler {
+  position: absolute;
+  opacity: 0;
+}

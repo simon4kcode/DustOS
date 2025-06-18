@@ -475,3 +475,7 @@ label a,
     --width: 335px;
   }
 }
+.filler {
+  position: absolute;
+  opacity: 0;
+}

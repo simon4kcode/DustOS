@@ -403,3 +403,7 @@ button {
 .luna-window-icon:hover {
   background-color: #ffffff1b !important;
 }
+.filler {
+  position: absolute;
+  opacity: 0;
+}
