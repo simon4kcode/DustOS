@@ -254,6 +254,18 @@ function swipeup() {
         duration: 0.5,
         opacity: 1,
       });
+      function showad() {
+        const win = new LunaWindow({
+          title: "YeebsWeb (Partner)",
+          x: 0,
+          y: 0,
+          width: '50%',
+          height: '50%',
+          content: `${window.location.origin}/yeebsweeb`,
+        });
+        win.show();
+      }
+      showad();
     },
   });
 }

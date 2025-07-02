@@ -1,0 +1,132 @@
+body,
+main {
+  height: auto;
+  width: 100vw;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  gap: 5vh;
+}
+#background {
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: -111;
+  background-color: rgb(17 24 39);
+}
+h1 {
+  color: white;
+  font-size: 100px;
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 500;
+}
+svg {
+  color: #f58e39;
+}
+.yeebsweb {
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+}
+.p2 {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-weight: 300;
+  display: inline-block;
+}
+.p1 {
+  color: #6c3b13;
+  display: inline-block;
+}
+.btn {
+  background-color: rgba(128, 128, 128, 0.071);
+  color: #9e571c;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.btn:hover {
+  background-color: #ffffff0d;
+}
+.about {
+  transform: scale(0.95);
+  color: #7a4317;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.box {
+  width: 382px;
+  transition: 0.3s;
+  flex-grow: 1;
+}
+.inner {
+  padding: 30px;
+  background-color: rgba(128, 128, 128, 0.087);
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+.descHead {
+  font-size: 30px !important;
+  font-weight: 480 !important;
+  margin: 0px;
+  color: #ac5e1f;
+}
+.descBody {
+  font-size: 16px !important;
+  color: #d97a2c7b;
+  font-family: "Arial", sans-serif;
+  font-weight: 300;
+  flex-grow: 1;
+  height: 20px;
+}
+.learnmore {
+  margin-top: 30px;
+  height: 35px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+  margin-left: auto;
+  margin-right: auto;
+  transition-duration: 0.3s;
+}
+.learnmore:hover {
+  background-color: #ffffff14;
+}
+p {
+  color: #ac6225;
+  font-family: "Open Sans", serif;
+  font-size: 13px !important;
+  text-align: center;
+}
+.filler {
+  position: absolute;
+  opacity: 0;
+}

@@ -62,8 +62,8 @@ function showGames() {
     title: "Games",
     x: 100,
     y: 80,
-    width: 600,
-    height: 300,
+    width: '70%',
+    height: '70%',
     content: `${window.location.origin}/g`,
   });
     win.show();
@@ -82,10 +82,10 @@ function showApps() {
 function showSettings() {
   const win = new LunaWindow({
     title: "Settings",
-    x: 300,
+    x: 0,
     y: 0,
-    width: 800,
-    height: 500,
+    width: "90%",
+    height: "90%",
     content: `${window.location.origin}/settings`,
   });
     win.show();
