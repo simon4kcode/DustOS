@@ -85,8 +85,8 @@
       </div>
     </div>
     <p class="notice">
-      All Gam<span class="filler">FILLER</span>es are carefully tested. If you find one that doesn't work, please
-      notify us in
+      All Gam<span class="filler">FILLER</span>es are carefully tested. If you
+      find one that doesn't work, please notify us in
       <span
         class="discordp"
         onclick="window.location.href='https://discord.gg/Dvh2veTWU4';"
@@ -125,4 +125,24 @@
       <button onclick="chemical.componentAction('close', 'web')">Close</button>
     </section>
   </body>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/js/jquery.easeScroll.js"></script>
+  <!--<script src="/global/js/parallax.js"></script> -->
+
+  <script>
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 100,
+      accelerationMax: 1.5,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true,
+    });
+  </script>
 </html>

@@ -254,7 +254,7 @@ function swipeup() {
         duration: 0.5,
         opacity: 1,
       });
-      function showad() {
+      /*function showad() {
         const win = new LunaWindow({
           title: "YeebsWeb (Partner)",
           x: 0,
@@ -265,7 +265,7 @@ function swipeup() {
         });
         win.show();
       }
-      showad();
+      showad();*/
     },
   });
 }

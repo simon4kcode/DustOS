@@ -62,8 +62,8 @@ function showGames() {
     title: "Games",
     x: 100,
     y: 80,
-    width: '70%',
-    height: '70%',
+    width: 800,
+    height: 500,
     content: `${window.location.origin}/g`,
   });
     win.show();
@@ -84,8 +84,8 @@ function showSettings() {
     title: "Settings",
     x: 0,
     y: 0,
-    width: "90%",
-    height: "90%",
+    width: 900,
+    height: 600,
     content: `${window.location.origin}/settings`,
   });
     win.show();

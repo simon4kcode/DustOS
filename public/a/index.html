@@ -29,51 +29,42 @@
           class="gamesearch"
           placeholder="Search Apps or Tags"
         />
-          <div class="genre-filters">
-            <label>
-              <input type="checkbox" class="genre-filter" value="AI" />
-              <div class="checkbox_highlight"><a>AI</a></div>
-            </label>
-            <label>
-              <input type="checkbox" class="genre-filter" value="shopping" />
-              <div class="checkbox_highlight"><a>Shopping</a></div>
-            </label>
-            <label>
-              <input type="checkbox" class="genre-filter" value="streaming" />
-              <div class="checkbox_highlight"><a>Streaming</a></div>
-            </label>
-            <label>
-              <input type="checkbox" class="genre-filter" value="gaming" />
-              <div class="checkbox_highlight"><a>Game Collection</a></div>
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                class="genre-filter"
-                value="cloud gaming"
-              />
-              <div class="checkbox_highlight"><a>Cloud Gaming</a></div>
-            </label>
-            <label>
-              <input type="checkbox" class="genre-filter" value="development" />
-              <div class="checkbox_highlight"><a>Development</a></div>
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                class="genre-filter"
-                value="social media"
-              />
-              <div class="checkbox_highlight"><a>Social Media</a></div>
-            </label>
-            <label>
-              <input type="checkbox" class="genre-filter" value="design" />
-              <div class="checkbox_highlight"><a>Design</a></div>
-            </label>
-          </div>
+        <div class="genre-filters">
+          <label>
+            <input type="checkbox" class="genre-filter" value="AI" />
+            <div class="checkbox_highlight"><a>AI</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="shopping" />
+            <div class="checkbox_highlight"><a>Shopping</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="streaming" />
+            <div class="checkbox_highlight"><a>Streaming</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="gaming" />
+            <div class="checkbox_highlight"><a>Game Collection</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="cloud gaming" />
+            <div class="checkbox_highlight"><a>Cloud Gaming</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="development" />
+            <div class="checkbox_highlight"><a>Development</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="social media" />
+            <div class="checkbox_highlight"><a>Social Media</a></div>
+          </label>
+          <label>
+            <input type="checkbox" class="genre-filter" value="design" />
+            <div class="checkbox_highlight"><a>Design</a></div>
+          </label>
+        </div>
       </div>
-      <div class="games">
-      </div>
+      <div class="games"></div>
     </div>
     <iframe id="web" data-controls="controls" is="chemical-iframe"></iframe>
     <input
@@ -107,4 +98,24 @@
       <button onclick="chemical.componentAction('close', 'web')">Close</button>
     </section>
   </body>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/js/jquery.easeScroll.js"></script>
+  <!--<script src="/global/js/parallax.js"></script> -->
+
+  <script>
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 100,
+      accelerationMax: 1.5,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true,
+    });
+  </script>
 </html>

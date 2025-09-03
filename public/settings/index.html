@@ -49,10 +49,14 @@
           />
         </div>
         <div class="settingcontainer">
-          <h2 class="settingName">Change Pro<span class="filler">FILLER</span>xy</h2>
+          <h2 class="settingName">
+            Change Pro<span class="filler">FILLER</span>xy
+          </h2>
           <h3 class="settingDesc">
-            Ultra<span class="filler">FILLER</span>violet is most stable. Scr<span class="filler">FILLER</span>amjet is fast and supports YouTube.
-            Ramme<span class="filler">FILLER</span>rhead is slow and outdated but still gets the job done.
+            Ultra<span class="filler">FILLER</span>violet is most stable.
+            Scr<span class="filler">FILLER</span>amjet is fast and supports
+            YouTube. Ramme<span class="filler">FILLER</span>rhead is slow and
+            outdated but still gets the job done.
           </h3>
           <button class="settingBtn">Select</button>
           <div class="prxydropdown" id="proxySelector">
@@ -110,27 +114,27 @@
           <div class="dropdown">
             <a
               class="tabpresets"
-              onclick="tabpresets('Google Classroom', 'https://ssl.gstatic.com/classroom/favicon.png'); alert('Changes will be applied the next time you visit.')" 
+              onclick="tabpresets('Google Classroom', 'https://ssl.gstatic.com/classroom/favicon.png'); alert('Changes will be applied the next time you visit.')"
               >Google Classroom</a
             >
             <a
               class="tabpresets"
-              onclick="tabpresets('Google Drive', 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'); alert('Changes will be applied the next time you visit.')" 
+              onclick="tabpresets('Google Drive', 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'); alert('Changes will be applied the next time you visit.')"
               >Google Drive</a
             >
             <a
               class="tabpresets"
-              onclick="tabpresets('Login', 'https://login.classlink.com/favicon.ico'); alert('Changes will be applied the next time you visit.')" 
+              onclick="tabpresets('Login', 'https://login.classlink.com/favicon.ico'); alert('Changes will be applied the next time you visit.')"
               >Classlink</a
             >
             <a
               class="tabpresets"
-              onclick="tabpresets('Clever', 'https://assets.clever.com/website-fallback/files/1.0.17/wp-content/uploads/2023/06/cropped-Favicon-512px-192x192.png'); alert('Changes will be applied the next time you visit.')" 
+              onclick="tabpresets('Clever', 'https://assets.clever.com/website-fallback/files/1.0.17/wp-content/uploads/2023/06/cropped-Favicon-512px-192x192.png'); alert('Changes will be applied the next time you visit.')"
               >Clever</a
             >
             <a
               class="tabpresets"
-              onclick="tabpresets('Google', 'https://www.gstatic.com/images/branding/searchlogo/ico/favicon.ico'); alert('Changes will be applied the next time you visit.')" 
+              onclick="tabpresets('Google', 'https://www.gstatic.com/images/branding/searchlogo/ico/favicon.ico'); alert('Changes will be applied the next time you visit.')"
               >Google</a
             >
             <a class="tabpresets" onclick="tabpresets('GalaxyV5', '')">Reset</a>
@@ -200,6 +204,27 @@
     </main>
   </body>
 </html>
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="/js/jquery.easeScroll.js"></script>
+  <!--<script src="/global/js/parallax.js"></script> -->
+
+  <script>
+    $("html").easeScroll({
+      frameRate: 60,
+      animationTime: 1000,
+      stepSize: 120,
+      pulseAlgorithm: 1,
+      pulseScale: 8,
+      pulseNormalize: 1,
+      accelerationDelta: 100,
+      accelerationMax: 1.5,
+      keyboardSupport: true,
+      arrowScroll: 50,
+      touchpadSupport: true,
+      fixedBackground: true,
+    });
+  </script>
+
 <script>
   // Check if localStorage has a value for autoAB, if not set it to true
   if (localStorage.getItem("autoAB") === null) {
@@ -278,5 +303,25 @@
     .getElementById("tabname")
     ?.addEventListener("input", updateTitleFromInput);
 </script>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="/global/js/jquery.easeScroll.js"></script>
+
+<script>
+  $("html").easeScroll({
+    frameRate: 60,
+    animationTime: 1000,
+    stepSize: 120,
+    pulseAlgorithm: 1,
+    pulseScale: 8,
+    pulseNormalize: 1,
+    accelerationDelta: 100,
+    accelerationMax: 1.5,
+    keyboardSupport: true,
+    arrowScroll: 50,
+    touchpadSupport: true,
+    fixedBackground: true,
+  });
+</script>
+
 <script src="/global/js/script.js"></script>
 <script src="setting.js"></script>

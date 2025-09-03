@@ -130,6 +130,7 @@ html {
   display: flex;
   padding: 0 5px;
   min-width: 0;
+  cursor: move;
 }
 .luna-window-title {
   font-size: 14px;
@@ -141,6 +142,7 @@ html {
 .luna-window-title-bar-center {
   background-color: var(--random);
   flex: 1;
+  cursor: move;
 }
 .luna-window-title-bar-right {
   background-color: var(--random);
