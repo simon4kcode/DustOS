@@ -6,8 +6,15 @@ const [app, listen] = new ChemicalServer({
   scramjet: "true",
   rh: "true",
 });
+
 const port = process.env.PORT || 8080;
 
+// --- Allow Caddy to issue TLS for all domains ---
+app.get("/allow", (req, res) => {
+  res.sendStatus(200); // allow all domains
+});
+
+// Serve static files
 app.use(
   express.static("public", {
     index: "index.html",
@@ -15,6 +22,7 @@ app.use(
   })
 );
 
+// Start ChemicalServer
 app.serveChemical();
 
 listen(port, () => {
