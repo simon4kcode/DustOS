@@ -112,12 +112,6 @@
     "genre": "Streaming"
   },
   {
-    "name": "Paramount Plus",
-    "url": "https://www.paramountplus.com",
-    "image": "paramount.png",
-    "genre": "Streaming"
-  },
-  {
     "name": "Perchance Image AI",
     "url": "https://perchance.org/ai-text-to-image-generator",
     "image": "perchance.jpg",

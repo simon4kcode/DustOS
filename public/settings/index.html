@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Surf the Galaxy with no limits..." />
-    <meta property="og:title" content="Galaxy" />
+    <meta property="og:title" content="DustOS" />
     <meta
       property="og:description"
       content="Surf the Galaxy with no limits..."
@@ -137,7 +137,7 @@
               onclick="tabpresets('Google', 'https://www.gstatic.com/images/branding/searchlogo/ico/favicon.ico'); alert('Changes will be applied the next time you visit.')"
               >Google</a
             >
-            <a class="tabpresets" onclick="tabpresets('GalaxyV5', '')">Reset</a>
+            <a class="tabpresets" onclick="tabpresets('DustOS', '')">Reset</a>
           </div>
         </div>
 
@@ -268,7 +268,7 @@
   function updateTitleFromInput() {
     const input = document.getElementById("tabname");
     if (input) {
-      const newTitle = input.value.trim() || "GalaxyV5"; // Default to GalaxyV5 if empty
+      const newTitle = input.value.trim() || "DustOS"; // Default to GalaxyV5 if empty
       document.title = newTitle;
 
       // Store value in localStorage
@@ -279,7 +279,7 @@
   // Load saved values on page load
   document.addEventListener("DOMContentLoaded", () => {
     const savedFavicon = localStorage.getItem("faviconInputValue");
-    const savedTitle = localStorage.getItem("tabInputValue") || "GalaxyV5"; // Default if empty
+    const savedTitle = localStorage.getItem("tabInputValue") || "DustOS"; // Default if empty
 
     if (savedFavicon) {
       const link =

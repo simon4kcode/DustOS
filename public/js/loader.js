@@ -48,7 +48,7 @@ updateTime();
 
 function showTabs() {
   const win = new LunaWindow({
-    title: "Galaxy Browser",
+    title: "DustOS Browser",
     x: 50,
     y: 50,
     width: 800,
