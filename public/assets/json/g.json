@@ -6,12 +6,6 @@
     "genre": "Action"
   },
   {
-    "name": "10 Minutes Till dawn",
-    "file": "/assets/g/10-minutes-till-dawn",
-    "image": "10mtd.png",
-    "genre": "Action"
-  },
-  {
     "name": "A Dark Room",
     "file": "/assets/g/adarkroom",
     "image": "adr.webp",
@@ -320,6 +314,12 @@
     "name": "Venge.io",
     "url": "https://venge.io/",
     "image": "venge.webp",
+    "genre": "Action"
+  },
+  {
+    "name": "10 Minutes Till dawn",
+    "file": "/assets/g/10-minutes-till-dawn",
+    "image": "10mtd.png",
     "genre": "Action"
   },
   {

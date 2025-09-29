@@ -6,31 +6,6 @@
     "genre": "Shopping"
   },
   {
-    "name": "AniCrush",
-    "url": "https://anicrush.to/",
-    "image": "anicrush.png",
-    "genre": "Streaming"
-  },
-  {
-    "name": "AnimePahe",
-    "url": "https://animepahe.ru/",
-    "image": "pahe.png",
-    "genre": "Streaming"
-  },
-  {
-    "name": "AniWatch",
-    "url": "https://ww2.aniwatch.fit/",
-    "image": "aniwatch.jpg",
-    "genre": "Streaming"
-  },
-  {
-    "name": "AniWave",
-    "url": "https://aniwave.best/home",
-    "image": "aniwave.jpg",
-    "genre": "Streaming"
-  },
-
-  {
     "name": "AutoEmbed",
     "url": "https://watch.autoembed.cc/",
     "image": "404.png",
@@ -135,7 +110,6 @@
     "image": "poki.webp",
     "genre": "Gaming"
   },
-  
   {
     "name": "Squibler AI",
     "url": "https://www.squibler.io/ai-text-generator/",
